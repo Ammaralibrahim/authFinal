@@ -1,0 +1,9 @@
+<div *ngIf="isLoggedIn; else notLoggedIn" >
+  <div class="flex justify-center items-center text-center text-green-500 text-3xl opacity-50">
+    You're logged in.
+   </div></div>
+<ng-template #notLoggedIn >
+ <div class="flex justify-center items-center text-center text-red-500 text-3xl opacity-50">
+  You're not logged in.
+ </div>
+</ng-template>
